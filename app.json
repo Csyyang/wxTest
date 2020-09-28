@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "下拉looading样式": "",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "应用大杂脍",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<navigator></navigator>
+<view class="index-box">
+  <view class="weather-box" wx:for="{{ lists }}" wx:key="id">
+    <image class="weather" src="{{ item.icon }}"></image>
+    <text>{{ item.title }}</text>
+  </view>
+</view>

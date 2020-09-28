@@ -1,0 +1,10 @@
+<view class="start">
+  <swiper indicator-dots="true" bindchange="swiperchange">
+    <swiper-item wx:for="{{lists}}"  wx:key="id">
+      <image mode="aspectFit" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="btn">
+  <button wx:if="{{swiperCurrent === 2 }}" type="primary" size="mini" bindtap="goToIndex" class="weui-btn mini-btn">进入首页</button>
+</view>
