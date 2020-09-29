@@ -5,19 +5,22 @@ Page({
   data: {
     lists: []
   },
-  onLoad: function() {
+  onLoad: function () {
     const _this = this;
-    indexModle().then(function(res) {
+    indexModle().then(function (res) {
       console.log(res)
       _this.setData({
         lists: res.data
       })
     })
   },
-  jump: function(e) {
+  jump: function (e) {
     console.log(e)
-    if(e.currentTarget.dataset.name === '今日头条') {
+    if (e.currentTarget.dataset.name === '今日头条') {
       wx.navigateTo({ url: '/pages/news/news' })
+    }
+    if (e.currentTarget.dataset.name === '轻松一刻') {
+      wx.navigateTo({ url: '/pages/joke/joke' })
     }
     // wx.navigateTo()
   }

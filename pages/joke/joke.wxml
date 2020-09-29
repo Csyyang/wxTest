@@ -1,0 +1,15 @@
+<view class="box">
+  <swiper>
+    <swiper-item wx:for="{{lists}}" wx:key="id">
+      <view class="content">
+        <view class="content-text">
+          <text>{{ item.content }}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view>
+  <button bindtap="change">再来一波</button>
+</view>

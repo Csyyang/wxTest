@@ -3,7 +3,8 @@
     "pages/start/start",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/joke/joke"
   ],
   "window":{
     "下拉looading样式": "",
