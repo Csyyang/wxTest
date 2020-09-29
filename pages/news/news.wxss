@@ -1,0 +1,14 @@
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.pic {
+  width: 135px;
+  height: 106px;
+}

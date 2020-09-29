@@ -1,0 +1,9 @@
+<view class="box" wx:for="{{lists}}" wx:key="id">
+  <view>
+    <image class="pic" mode="aspectFit" src="{{ item.thumbnail_pic_s }}"></image>
+  </view>
+  <view>
+    <text class="title">{{ item.title }}</text>
+    <text>{{ item.date }}</text>
+  </view>
+</view>

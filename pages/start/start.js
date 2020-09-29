@@ -1,9 +1,18 @@
 const app = getApp()
+const { screen } = require('../../api/index')
 
 Page({
   data: {
-    lists: ['../../static/img/交流.png', '../../static/img/团队.png', '../../static/img/数据.png'],
+    lists: [],
     swiperCurrent: 0
+  },
+  onLoad: function() {
+    const _this = this;
+    screen().then(function(res) {
+      _this.setData({
+        lists: res.data
+      })
+    })
   },
   swiperchange: function (e) {
     this.setData({

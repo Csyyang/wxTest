@@ -2,7 +2,8 @@
   "pages":[
     "pages/start/start",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/news/news"
   ],
   "window":{
     "下拉looading样式": "",
