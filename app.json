@@ -4,7 +4,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/news/news",
-    "pages/joke/joke"
+    "pages/joke/joke",
+    "pages/weather/weather",
+    "pages/car/car"
   ],
   "window":{
     "下拉looading样式": "",
@@ -14,5 +16,18 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      { "pagePath": "pages/news/news", "text": "新闻", "iconPath": "./static/img/新闻.png"  },
+      { "pagePath": "pages/joke/joke", "text": "笑话", "iconPath": "./static/img/笑脸.png"  },
+      { "pagePath": "pages/weather/weather", "text": "天气", "iconPath": "./static/img/天气.png"  },
+      { "pagePath": "pages/car/car", "text": "驾考", "iconPath": "./static/img/考试.png"  },
+      { "pagePath": "pages/index/index", "text": "更多", "iconPath": "./static/img/更多.png"  }
+    ]
+  }
 }

@@ -20,6 +20,6 @@ Page({
     })
   },
   goToIndex: function() {
-    wx.reLaunch({ url: '/pages/index/index' })
+    wx.switchTab({ url: '/pages/news/news' })
   }
 })

@@ -22,6 +22,9 @@ Page({
     if (e.currentTarget.dataset.name === '轻松一刻') {
       wx.navigateTo({ url: '/pages/joke/joke' })
     }
+    if(e.currentTarget.dataset.name === '天气预报') {
+      wx.navigateTo({ url: '/pages/weather/weather' })
+    }
     // wx.navigateTo()
   }
 })

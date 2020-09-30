@@ -17,3 +17,11 @@ exports.toutiao = function () { // 头条
 exports.joke = function (data) { // 笑话
   return request('api/joke/content/list.php', 'get', data)
 }
+
+exports.weather = function(data) { // 天气预报
+  return request('api/simpleWeather/query','post',data)
+}
+
+exports.jztk = function(data) { // 驾考
+  return request('api/jztk/query','post',data)
+}
