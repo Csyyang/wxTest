@@ -3,7 +3,8 @@ const { weather, geocoder } = require('../../api/index')
 Page({
   data: {
     location: '',
-    weather: {}
+    weather: {},
+    future: []
   },
   onLoad: function () {
     const _this = this
@@ -25,7 +26,8 @@ Page({
             console.log(e)
             _this.setData({
               location: e.data.result.address_component.city,
-              weather: e2.data.result.realtime
+              weather: e2.data.result.realtime,
+              future: e2.data.result.future
             })
           })
         })

@@ -9,3 +9,14 @@
     <text>{{ weather.info }}/{{ weather.direct}}{{ weather.power }}</text>
   </view>
 </view>
+
+<view>
+  <text>5天天气预报</text>
+  <view class="future-box">
+    <view class="future" wx:for="{{future}}" wx:key="index">
+      <text>{{ item.date }}</text>
+      <text>温度{{ item.temperature }}</text>
+      <text>{{ item.weather }}</text>
+    </view>
+  </view>
+</view>
