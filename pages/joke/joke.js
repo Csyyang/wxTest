@@ -18,7 +18,6 @@ Page({
   },
   getData: function () {
     const _this = this
-    console.log(this.page,this.pagesize)
     joke({
       key: '91b75234676c6c9f3201d600ed4ea93c',
       sort: 'desc',

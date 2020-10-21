@@ -1,0 +1,35 @@
+.img {
+  overflow: hidden;
+  height: 300px;
+  background-image: linear-gradient(#0D68BC, #72ADE0);
+}
+
+.weather {
+  position: absolute;
+  right: 0;
+}
+
+.location {
+  margin-top: 2rem;
+}
+
+.location-img {
+  height: 21px;
+  width: 21px;
+}
+
+.location-name {
+  transform: translateY(-5px);
+  display: inline-block;
+}
+
+.desc {
+  text-align: center;
+}
+
+.wendu {
+  transform: translateX(20px);
+  font-weight: lighter;
+  display: block;
+  font-size: 6rem;
+}

@@ -1,5 +1,6 @@
 function request(url, method, data) {
   return new Promise(function (resolve, reject) {
+    wx.showLoading()
     wx.request({
       url: 'https://yangyangcsy.cn/' + url,
       method,
@@ -9,6 +10,7 @@ function request(url, method, data) {
       data,
       timeout: 20000,
       success: function (res) {
+        wx.hideLoading()
         resolve(res)
       },
       fail: function fail(error) {

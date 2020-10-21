@@ -19,9 +19,13 @@ exports.joke = function (data) { // 笑话
 }
 
 exports.weather = function(data) { // 天气预报
-  return request('api/simpleWeather/query','post',data)
+  return request('weather/simpleWeather/query','post',data)
 }
 
 exports.jztk = function(data) { // 驾考
   return request('api/jztk/query','post',data)
+}
+
+exports.geocoder = function(data) { // 经纬度逆向解析
+  return request('position/ws/geocoder/v1','get',data)
 }

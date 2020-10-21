@@ -1,0 +1,11 @@
+<view class="img">
+  <image class="weather" src="https://m.baidu.com/se/static/ala_atom/assets/img/cloud_day_a94bf30.png"></image>
+  <view class="location">
+    <image mode="aspectFit" class="location-img" src="https://yangyangcsy.cn/img/位置.png"></image>
+    <text class="location-name">{{ location }}</text>
+  </view>
+  <view class="desc">
+    <text class="wendu">{{ weather.temperature }}°</text>
+    <text>{{ weather.info }}/{{ weather.direct}}{{ weather.power }}</text>
+  </view>
+</view>
