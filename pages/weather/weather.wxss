@@ -43,3 +43,30 @@
   flex-direction: column;
   width: 20vw;
 }
+
+.input {
+  border: 1px solid;
+  width: 44vw;
+  margin: auto;
+}
+
+.searchCity {
+  position: absolute;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+}
+
+.input-box {
+  margin: auto;
+  position: absolute;
+  width: 70vw;
+  height: 20vh;
+  background: #ffffff;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 12px;
+}

@@ -4,7 +4,9 @@ Page({
   data: {
     location: '',
     weather: {},
-    future: []
+    future: [],
+    showInput: false,
+    cityName: ''
   },
   onLoad: function () {
     const _this = this
@@ -32,6 +34,37 @@ Page({
           })
         })
       }
+    })
+  },
+  showInput() {
+    wx.hideTabBar() //隐藏tabbar
+    this.setData({
+      showInput: true
+    })
+  },
+  cityName(e) {
+    this.setData({
+      cityName: e.detail.value
+    })
+  },
+  searWeather() {
+    wx.showTabBar() // 显示tabbar
+    this.setData({
+      showInput: false
+    })
+    // 获取目的地城市天气
+    const obj = {
+      city: this.data.cityName,
+      key: '85b1cdca2c4e0e23023c0963fa20da71'
+    }
+    const _this = this
+    weather(obj).then(function (e2) {
+      if(e2.data.error_code !== 0) return
+      _this.setData({
+        location: _this.data.cityName,
+        weather: e2.data.result.realtime,
+        future: e2.data.result.future
+      })
     })
   }
 })

@@ -1,8 +1,15 @@
+<view wx:if="{{ showInput }}" class="searchCity">
+  <view class="input-box">
+    <input class="input" bindinput="cityName" placeholder="请输入城市名称（例：成都、上海、北京）" />
+    <button bindtap="searWeather">确定</button>
+  </view>
+</view>
+
 <view class="img">
   <image class="weather" src="https://m.baidu.com/se/static/ala_atom/assets/img/cloud_day_a94bf30.png"></image>
   <view class="location">
     <image mode="aspectFit" class="location-img" src="https://yangyangcsy.cn/img/位置.png"></image>
-    <text class="location-name">{{ location }}</text>
+    <text class="location-name" bindtap="showInput">{{ location }}</text>
   </view>
   <view class="desc">
     <text class="wendu">{{ weather.temperature }}°</text>
