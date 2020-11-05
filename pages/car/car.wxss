@@ -1,0 +1,11 @@
+.tips {
+  text-align: center;
+}
+
+.car-box {
+  margin-top: 50%;
+}
+
+button {
+  margin-bottom: 20px;
+}

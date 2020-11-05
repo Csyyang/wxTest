@@ -1,0 +1,10 @@
+<text>{{ allArray[index].id }}.{{  allArray[index].question }}</text>
+<image src="{{ allArray[index].url }}"></image>
+<radio-group>
+  <radio>{{ allArray[index].item1 }}</radio>
+  <radio>{{ allArray[index].item2 }}</radio>
+  <radio wx:if="{{allArray[index].item3}}">{{ allArray[index].item3 }}</radio>
+  <radio wx:if="{{allArray[index].item4}}">{{ allArray[index].item4 }}</radio>
+</radio-group>
+
+<button bindtap="next">下一题</button>

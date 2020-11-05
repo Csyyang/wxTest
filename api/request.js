@@ -14,6 +14,7 @@ function request(url, method, data) {
         resolve(res)
       },
       fail: function fail(error) {
+        wx.hideLoading()
         reject(error);
       }
     })

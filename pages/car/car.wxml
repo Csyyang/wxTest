@@ -1,0 +1,8 @@
+<view class="tips">
+  <text>请选择需要练习的题目</text>
+</view>
+
+<view class="car-box">
+  <button bindtap="jump" data-subject="1" >科目一</button>
+  <button bindtap="jump" data-subject="4">科目二</button>
+</view>

@@ -6,7 +6,8 @@
     "pages/news/news",
     "pages/joke/joke",
     "pages/weather/weather",
-    "pages/car/car"
+    "pages/car/car",
+    "pages/car_test/car_test"
   ],
   "permission": {
     "scope.userLocation": {
